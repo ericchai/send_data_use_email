@@ -1,9 +1,6 @@
 
 # coding: utf-8
 
-# In[ ]:
-
-
 # --------这些模块及函数的作用是处理email----------------
 from email import encoders
 from email.header import Header
@@ -220,12 +217,8 @@ def fun_timer():
     
     
 # Timer（定时器）是Thread的派生类，用于在指定时间后调用一个方法，和其他比如c的定时器是不同的，c里是会自动循环的，这里的Timer则是不会    
-timer = Timer(1,fun_timer)       # 定义初次定时器,1s后执行fun_timer
-timer.start()                    # 启动定时器
-
-
-# In[23]:
-
+# timer = Timer(1,fun_timer)       # 定义初次定时器,1s后执行fun_timer
+# timer.start()                    # 启动定时器
 
 if __name__ == "__main__":   
     timer = Timer(1,fun_timer)  #首次启动
